@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em que turno o aluno estuda</title>
+</head>
+
+<body>
+    <h1>Em que turno você estuda?</h1>
+ <input type="text" id="turno">
+ <input type="button" value="verificar turno" id="verificar" onclick="verificarTurno()" >
+ <div id="res" ></div>
+
+
+
+<script>
+
+function verificarTurno() {
+var tur = window.document.getElementById('turno')
+var resp = window.document.getElementById('res')
+var val = String(tur.value)
+
+if( val =="Matutino" ) {
+
+resp.innerText = "bom dia"
+} else if (val == "Vespertino") {
+
+    resp.innerText = "Boa tarde"
+} else if (val == "Noturno") {
+
+resp.innerText = "Boa noite"
+
+}
+
+
+}
+
+
+
+
+</script>
+
+
+</body>
+
+
+
+
+</html>
