@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar se um número é negativo</title>
+</head>
+<body>
+    <h1>Verificar o valor dos números</h1>
+   <input type="number" id="num" >
+   <input type="button" value="verificar" id="verificar" onclick="verificarNum()">
+   <div id="res"></div>
+
+<script>
+ function verificarNum() {
+   var num1 = window.document.getElementById('num')
+   var resul = window.document.getElementById('res')
+   var val = Number(num1.value)
+
+   if (val < 0) {
+   resul.innerText = `O numero ${val} é negativo`
+
+   } else { resul.innerText = `O número ${val} é positivo`
+}
+
+
+ }
+
+</script>
+
+</body>
+</html>

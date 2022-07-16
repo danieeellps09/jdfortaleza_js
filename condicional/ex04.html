@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar o sexo</title>
+</head>
+<body>
+    <h1>Verificar a representação dos sexos</h1>
+   <input type="text" id="sexo" >
+   <input type="button" value="verificar" id="verificar" onclick="verificarSexo()">
+   <div id="res"></div>
+
+<script>
+ function verificarSexo() {
+   var sex = window.document.getElementById('sexo')
+   var resul = window.document.getElementById('res')
+   var val = toString(sex.value)
+
+   if (val == "F") {
+   resul.innerText = `A letra ${val} representa sexo feminino `
+
+   } else if (val == "M") { resul.innerText = `A letra ${val} representa sexo masculino`
+}
+
+
+ }
+
+</script>
+
+</body>
+</html>

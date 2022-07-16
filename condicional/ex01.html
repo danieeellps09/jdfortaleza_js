@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimindo o maior número</title>
+
+
+
+</head>
+<body>
+    <h1>Digite dois números número</h1>
+<input type="number" id="num1">
+<input type="number"  id="num2">
+<input type="button" value="verificar" id="verificar" onclick="verificarNum()" >
+<div id="res"  > </div>
+
+</body>
+
+<script>
+
+function verificarNum() {
+
+var number1 = window.document.getElementById('num1')
+var number2 = window.document.getElementById('num2')
+var resposta = window.document.getElementById('res')
+var ver1 = Number(number1.value)
+var ver2 = Number(number2.value)
+
+
+
+if (ver1 > ver2) {
+
+resposta.innerText = `O maior número é ${ver1}`
+
+} else {
+
+resposta.innerText=`O maior número é ${ver2}`
+
+}
+
+
+}
+
+
+</script>
+
+
+
+</html>
