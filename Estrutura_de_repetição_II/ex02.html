@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequência Fibonacci</title>
+</head>
+<body>
+
+
+    <script>
+ let num = Number(window.prompt("Digite um número"))
+let soma = 0
+let ant = 0
+let prox = 1
+
+for(i=0;i<num; i++) {
+    soma = ant + prox
+    ant = prox
+    prox = soma
+}
+
+document.write("O fibonacci de ", num, "=", ant)
+
+
+
+    </script>
+    
+</body>
+</html>
